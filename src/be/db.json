@@ -1,0 +1,73 @@
+{
+   "easy" : {
+      "url" : "./assets/bounedjah2.jpg",
+      "chars": [
+         {
+            "name": "bounedjah",
+            "left": 258,
+            "top": 88,
+            "right": 367,
+            "bottom": 268
+         },
+         {
+            "name": "abdellaoui",
+            "left": 0,
+            "top": 70,
+            "right": 62,
+            "bottom": 212 
+         },
+         {
+            "name": "staff",
+            "left": 600,
+            "top": 246,
+            "right": 803,
+            "bottom": 503
+         }
+      ]
+   },
+   "medium": {
+      "url" : "./assets/bounedjah.jpg",
+      "chars": [
+         {
+            "name": "adam",
+            "left": 0,
+            "top": 70,
+            "right": 62,
+            "bottom": 212 
+         },
+         {
+            "name": "belmadi",
+            "left": 600,
+            "top": 246,
+            "right": 803,
+            "bottom": 503
+         }
+      ]
+   },
+   "hard": {
+      "url" : "./assets/bounedjah2.jsg",
+      "chars": [
+         {
+            "name": "bounedjah",
+            "left": 258,
+            "top": 88,
+            "right": 367,
+            "bottom": 268
+         },
+         {
+            "name": "abdellaoui",
+            "left": 0,
+            "top": 70,
+            "right": 62,
+            "bottom": 212 
+         },
+         {
+            "name": "staff",
+            "left": 600,
+            "top": 246,
+            "right": 803,
+            "bottom": 503
+         }
+      ]
+   }
+}

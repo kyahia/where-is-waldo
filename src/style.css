@@ -1,0 +1,22 @@
+body{
+   text-align: center;
+}
+
+header{
+   background-color: lightgray;
+   height: 10rem;
+}
+
+main{
+   background-color: pink;
+   height: 100vh;
+}
+
+aside{
+   position: fixed;
+}
+aside>button{
+   display: block;
+   width: 10ch;
+   padding: 0;
+}
