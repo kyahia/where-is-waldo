@@ -1,6 +1,6 @@
 {
    "easy" : {
-      "url" : "./assets/bounedjah2.jpg",
+      "url" : "../src/be/assets/bounedjah2.jpg",
       "chars": [
          {
             "name": "bounedjah",
@@ -26,7 +26,7 @@
       ]
    },
    "medium": {
-      "url" : "./assets/bounedjah.jpg",
+      "url" : "../src/be/assets/bounedjah.jpg",
       "chars": [
          {
             "name": "adam",
@@ -45,7 +45,7 @@
       ]
    },
    "hard": {
-      "url" : "./assets/bounedjah2.jsg",
+      "url" : "../src/be/assets/bounedjah2.jsg",
       "chars": [
          {
             "name": "bounedjah",
