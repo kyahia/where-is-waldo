@@ -1,15 +1,14 @@
-const data = require("./db.json");
+import getData from "./app";
+
+let data;
 let lev;
 let time;
 
-export function getData(level){
+export async function fetchBEData(level){
+   data = await getData();
    lev = level;
    startClock();
-
-   return Promise.resolve({
-      imageUrl: data[level].url,
-      names: data[level].chars.map(el => el.name)
-      })
+   return { names: data[level].chars.map(el => el.name), imgUrl: data[level].url };
 }
 
 export function checking (char, px, py){

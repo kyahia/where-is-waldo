@@ -1,6 +1,6 @@
 import "./style.css";
 
-import { getData, checking } from "./be/be";
+import { fetchBEData, checking } from "./be/beFcts";
 
 import loader from "./loader";
 import endGame from "./closer";
@@ -45,8 +45,9 @@ function startGame(selectedLevel){
    }
    
    async function fetchData(){
-      data = await getData(selectedLevel);
-      img.src = data.imageUrl;
+      data = await fetchBEData(selectedLevel);
+      console.log(data)
+      // img.src = data[selectedLevel].url;
    }
 }
 

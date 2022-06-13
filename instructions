@@ -1,0 +1,62 @@
+// Project ID : where-s-waldo-d05b1
+
+firebaseConfig = {
+  apiKey: "AIzaSyB7HLxxSKU907yUD83cvxhsuFyDFUU6WE0",
+  authDomain: "where-s-waldo-d05b1.firebaseapp.com",
+  projectId: "where-s-waldo-d05b1",
+  storageBucket: "where-s-waldo-d05b1.appspot.com",
+  messagingSenderId: "980037915774",
+  appId: "1:980037915774:web:43c8b22d5728e73ff4f42f"
+};
+
+// firebase login
+// firebase init
+// firebase deploy
+
+
+// Creating a collection + Rand Doc Id
+async function addData(db, collectionName, data){
+   try {
+      const docRef = await addDoc(collection(db, collectionName), data);
+      console.log("Document written : ", docRef);
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+}
+
+// Adding/Updating document in a existing collection
+async function addToDocument(db, data, documentPath){
+  const targetDocument = doc(db, documentPath); // docPath = collection/docId
+  try{
+    await setDoc(targetDocument, data, { merge: true }) // merge option to update only specified fields; otherwise remore opt
+    console.log('Updated DB')
+  } catch (e) {
+    console.log('DB Error', e);
+  }
+}
+
+// Getting a list of documents from a collection
+async function getData(collectionName){
+  const infoCols = collection(db, collectionName);
+  const infoSnapShot = await getDocs(infoCols);
+  const infoList = infoSnapShot.map(doc => infoList = doc.data());
+
+  return infoList;
+}
+
+// Document change listener (works for querries as well)
+let unsubscribeListener;
+function documentListener(targetDoc){ // targetDoc = doc(db, docPath)
+  unsubscribeListener = onSnapShot(targetDoc, docSnap => {
+    console.log('Updated to : ', docSnap.data())
+  })
+}
+// call unsubscribeListener() to end listening to reduce costs
+
+// Get cetain documents from collection
+async function queryDocuments(targetCollection){ // targetCollection = collection(db, collectionName)
+  const orderedQuery = query(targetCollection, where('date', '==', '13/04/2022'), orderBy('price'), limit(10)) // set Index for sorting
+  const snapQuerDoc = await getDocs(orderedQuery);
+  return snapQuerDoc.map(doc => doc.data())
+}
