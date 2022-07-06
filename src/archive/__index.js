@@ -1,9 +1,4 @@
 import "./style.css";
-import image from "./be/assets/bounedjah2.jpg";
-
-const abdellaoui = { left: 0, right: 62, top: 70, bottom: 212};
-const bounedjah = { left: 258, right: 367, top: 88, bottom: 268};
-const staff = { left: 600, right: 803, top: 246, bottom: 503};
 
 const head = document.querySelector('header');
 const main = document.querySelector('main');

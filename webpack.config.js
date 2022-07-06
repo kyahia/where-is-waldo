@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-   entry : "./src/fe.js",
+   entry : "./src/front.js",
    output : {
       filename: "main.js",
       path: path.resolve(__dirname, "dist")

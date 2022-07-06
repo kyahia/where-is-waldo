@@ -1,0 +1,108 @@
+body{
+   text-align: center;
+}
+
+header{
+   background-color: gold;
+   height: 10vh;
+   padding: .5rem;
+}
+
+header nav{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+header span{
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   padding: 0 .5rem;
+}
+span button{
+   border: 0;
+}
+
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+main form, main #welcome{
+   display: none;
+}
+main .playing{
+   display: block;
+   padding: 1rem;
+   background-color: black;
+   color: white;
+}
+
+section{
+   display: none;
+}
+
+.welcome{
+   min-height: 80vh;
+   padding: 1rem;
+}
+.welcome form, .welcome #welcome{
+   display: block;
+}
+
+img{
+   border-radius: 3rem;
+}
+
+aside{
+   position: fixed;
+}
+aside>button{
+   display: block;
+   width: 10ch;
+   padding: 0;
+}
+
+#player-score{
+   color: red;
+}
+
+#welcome{
+   font-size: xx-large;
+   text-align: center;
+}
+
+#end-header{
+   cursor: pointer;
+}
+#end-header:hover{
+   background-color: red;
+}
+#end-header:active{
+   background-color: red;
+}
+
+table{
+   font-size: xx-large;
+   text-align: left;
+   border-spacing: .2rem 0;
+}
+thead{
+   background-color: green;
+   color: white;
+   font-weight: bold;
+}
+tr th:first-child{
+   border-radius: .5em 0 0 0;
+}tr th:last-child{
+   border-radius: 0 .5em 0 0;
+}
+th, td{
+   padding: .5rem;
+}
+#player-score td{
+   background-color: lightgrey;
+   color: green;
+   font-weight: bold;
+}

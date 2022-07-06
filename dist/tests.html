@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Geo test</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <span id="username-header">Yahia</span>
+         <span id="timer-header">00:00</span>
+         <span id="end-header">END</span>
+      </nav>
+      <p id="result-header">Nice !! You found ${checkedList.map(name => `${name}`)} Continue</p>
+   </header>
+
+   <main class="welcome">
+      <p id="welcome">Welcome to our Geography game. Enter credentials to start playing :</p>
+      <form>
+         <p>
+            <label>Playername</label>
+            <input type="text" />
+            <label>Password</label>
+            <input type="password" />
+         </p>
+            <button>submit</button>
+      </form>
+      <section>
+         <button>START</button>
+         <img src="../src/be/assets/Africa.png" alt="">
+      </section>
+      <ul>
+         <li>yahia - 00:54</li>
+         <li>dslqk - 00:02</li>
+         <li>yaùmgrehia - 45:02</li>
+         <li>fùsdfù - 65:02</li>
+      </ul>
+
+      <table>
+         <thead>
+            <tr>
+               <th>Playername</th>
+               <th>time</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>yahia²</td>
+               <td>00:54</td>
+            </tr>
+            <tr id="player-score">
+               <td>greg</td>
+               <td>54:55</td>
+            </tr>
+            <tr>
+               <td>aez</td>
+               <td>98:00</td>
+            </tr>
+         </tbody>
+      </table>
+   </main>
+
+   <script>
+      // const btn = document.querySelector('button');
+      // const link1 = document.getElementById('in1');
+      // const link2 = document.getElementById('in2');
+      // const img1 = document.getElementById('img1');
+      // const img2 = document.getElementById('img2');
+      
+      // btn.addEventListener('click', loadImg);
+      // async function loadImg(){
+      //    img1.src = link1.value;
+      //    img2.src = link2.value;
+      // }
+
+      // img1.addEventListener('click', showXY);
+      // img2.addEventListener('click', showXY);
+
+      // function showXY(e){
+      //    const imgRect = e.target.getBoundingClientRect();
+      //    console.log('x', e.clientX - imgRect.left)
+      //    console.log('y', e.clientY - imgRect.top)
+      // }
+
+      // function keyboard(e){
+      //    console.log(e.key)
+      // }
+
+      // window.addEventListener('keydown', keyboard)
+
+   </script>
+</body>
+</html>

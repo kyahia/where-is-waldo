@@ -5,11 +5,33 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Where is Waldo</title>
-   <!-- <link rel="stylesheet" href="../src/style.css"> -->
+   <link rel="stylesheet" href="./style.css">
    <script src="./main.js" defer></script>
 </head>
 <body>
-   <header></header>
-   <main></main>
+   <header>
+      <nav>
+         <span id="username-header"></span>
+         <span id="timer-header"></span>
+         <span id="end-header"></span>
+      </nav>
+      <p id="result-header"></p>
+   </header>
+   <main class="welcome">
+      <p id="welcome">Welcome to our Geography game. Enter credentials to start playing :</p>
+      <form>
+         <p>
+            <label>Playername</label>
+            <input type="text" minlength="3" maxlength="10" name="name" id="name"/>
+            <label>Password</label>
+            <input type="password" minlength="3" maxlength="10" name="password" id="password"/>
+            <button type="submit">submit</button>
+         </p>
+      </form>
+      <section>
+         <p id="chars-list"></p>
+         <img src="" alt="continent">
+      </section>
+   </main>
 </body>
 </html>

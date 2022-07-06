@@ -1,72 +1,65 @@
 {
-   "easy" : {
-      "url" : "../src/be/assets/bounedjah2.jpg",
+   "0" : {
+      "url" : "Africa.png",
       "chars": [
          {
-            "name": "bounedjah",
-            "left": 258,
-            "top": 88,
-            "right": 367,
-            "bottom": 268
-         },
-         {
-            "name": "abdellaoui",
-            "left": 0,
-            "top": 70,
-            "right": 62,
-            "bottom": 212 
-         },
-         {
-            "name": "staff",
-            "left": 600,
-            "top": 246,
-            "right": 803,
-            "bottom": 503
+            "name": "Africa",
+            "left": 50,
+            "top": 30,
+            "right": 470,
+            "bottom": 450
          }
       ]
    },
-   "medium": {
-      "url" : "../src/be/assets/bounedjah.jpg",
+   "1": {
+      "url" : "Oceania.png",
       "chars": [
          {
-            "name": "adam",
-            "left": 0,
-            "top": 70,
-            "right": 62,
-            "bottom": 212 
+            "name": "New Zeland",
+            "left": 440,
+            "top": 410,
+            "right": 540,
+            "bottom": 518 
          },
          {
-            "name": "belmadi",
-            "left": 600,
-            "top": 246,
-            "right": 803,
-            "bottom": 503
+            "name": "Australia",
+            "left": 50,
+            "top": 135,
+            "right": 325,
+            "bottom": 410
          }
       ]
    },
-   "hard": {
-      "url" : "../src/be/assets/bounedjah2.jsg",
+   "2": {
+      "url" : "South_America.png",
       "chars": [
          {
-            "name": "bounedjah",
-            "left": 258,
-            "top": 88,
-            "right": 367,
-            "bottom": 268
+            "name": "Venezuela",
+            "left": 266,
+            "top": 95,
+            "right": 390,
+            "bottom": 190
          },
          {
-            "name": "abdellaoui",
-            "left": 0,
-            "top": 70,
-            "right": 62,
-            "bottom": 212 
+            "name": "Chile",
+            "left": 285,
+            "top": 360,
+            "right": 340,
+            "bottom": 700 
          },
          {
-            "name": "staff",
-            "left": 600,
-            "top": 246,
-            "right": 803,
-            "bottom": 503
+            "name": "Paraguay",
+            "left": 360,
+            "top": 370,
+            "right": 440,
+            "bottom": 450
+         },
+         {
+            "name": "Uruguay",
+            "left": 400,
+            "top": 470,
+            "right": 445,
+            "bottom": 520
          }
       ]
    }
